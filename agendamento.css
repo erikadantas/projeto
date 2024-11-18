@@ -1,0 +1,85 @@
+ body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #0A5AAF;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        header img {
+            width: 150px;
+          
+            height: auto;
+        }
+
+        .form-container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            font-weight: 600;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        select,
+        input[type="email"],
+        input[type="password"],
+        input[type="text"],
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #00bfae;
+            color: white;
+            cursor: pointer;
+            border: none;
+            font-weight: 600;
+        }
+
+        button:hover {
+            background-color: #008f7b;
+        }
+
+        .login-container {
+            margin-top: 20px;
+            display: none;
+        }
+
+        .specialties,
+        .procedures {
+            display: none;
+        }
+
+        .error {
+            color: red;
+            font-size: 14px;
+        }
+
+        .success {
+            color: green;
+            font-size: 14px;
+        }
+
+        .switch-link {
+            cursor: pointer;
+            color: #00bfae;
+        }

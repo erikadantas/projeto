@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página do Paciente</title>
+    <link href="pagina do paciente.css" rel="stylesheet">
+    <script src="pagina do paciente.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="logo.jpeg" alt="Logo do Sistema">
+        <h2 id="greeting">Bem-vindo</h2> 
+    </header>
+    <div class="container">
+        <h2>Escolha uma opção:</h2>
+        <div class="menu">
+                <a href="index.html agendamento.html">Agendar Consulta</a>
+                <a href="index.html cancelamento.html">Cancelar Consulta</a>
+                <a href="index.html resultado.html">Ver Resultados</a>
+        </div>
+        <p>Se você deseja agendar uma nova consulta, cancelar uma consulta agendada ou ver os resultados de seus exames,
+            basta escolher uma das opções acima.</p>
+
+        <button onclick="logout()">Sair</button>
+
+        <p class="error" id="errorMsg"></p>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Sistema de Agendamento de Consultas</p>
+    </footer>
+</body>
+
+</html>

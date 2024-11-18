@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancelamento de Consultas e Exames - Clínica Compilar</title>
+    <link rel="stylesheet" href="cancelamento.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.jpeg" alt="Logo da Compilar">
+        </div>
+        <nav>
+    </header>
+    <section class="cancel-section">
+        <h2>Solicitar Cancelamento</h2>
+        <p>Preencha o formulário abaixo para solicitar o cancelamento da sua consulta ou exame.</p>
+        <form class="cancel-form" action="cancelamento_submit.php" method="POST">
+            <label for="tipo-cancelamento">Tipo de Cancelamento</label>
+            <select id="tipo-cancelamento" name="tipo-cancelamento" required>
+                <option value="">Selecione...</option>
+                <option value="consulta">Consulta</option>
+                <option value="exame">Exame</option>
+            </select>
+
+            <label for="data-cancelamento">Data da Consulta/Exame</label>
+            <input type="date" id="data-cancelamento" name="data-cancelamento" required>
+
+            <label for="motivo-cancelamento">Motivo do Cancelamento</label>
+            <textarea id="motivo-cancelamento" name="motivo-cancelamento" placeholder="Descreva o motivo"
+                required></textarea>
+
+            <label for="decisao-cancelamento">O que deseja fazer?</label>
+            <select id="decisao-cancelamento" name="decisao-cancelamento" required>
+                <option value="">Selecione...</option>
+                <option value="cancelar">Cancelar apenas</option>
+                <option value="reagendar">Reagendar para outro dia</option>
+            </select>
+            <div class="reschedule-options" id="reschedule-options">
+                <label for="nova-data">Escolha uma nova data:</label>
+                <select id="nova-data" name="nova-data">
+                </select>
+            </div>
+            <button type="submit">Solicitar Cancelamento</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Compilar | Todos os direitos reservados.</p>
+        <p><a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a></p>
+    </footer>
+</body>
+
+</html>

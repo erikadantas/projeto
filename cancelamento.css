@@ -1,0 +1,164 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+
+        header {
+            background-color: #0A5AAF;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header .logo img {
+            width: 120px;
+            height: auto;
+            display: block;
+            margin-right: auto;
+        }
+
+        header nav {
+            display: flex;
+            align-items: center;
+            margin-left: 10px;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        header nav a:hover {
+            border-bottom: 2px solid #00bfae;
+        }
+
+        .back-btn {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 2rem;
+            color: white;
+            text-decoration: none;
+            padding: 8px;
+            border-radius: 50%;
+            background-color: #0A5AAF;
+        }
+
+        .back-btn:hover {
+            background-color: #00bfae;
+        }
+
+        .cancel-section {
+            padding: 80px 0 50px;
+            background-color: white;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .cancel-section h2 {
+            font-size: 36px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .cancel-section p {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .cancel-form {
+            width: 60%;
+            margin: 0 auto;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cancel-form label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 500;
+            font-size: 16px;
+        }
+
+        .cancel-form input,
+        .cancel-form select,
+        .cancel-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .cancel-form textarea {
+            height: 150px;
+            resize: none;
+        }
+
+        .cancel-form button {
+            padding: 12px 25px;
+            background-color: #00bfae;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .cancel-form button:hover {
+            background-color: #008f7e;
+        }
+
+        footer {
+            background-color: #0A5AAF;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 16px;
+        }
+
+        footer a {
+            color: #00bfae;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .reschedule-options {
+            display: none;
+            margin-top: 15px;
+        }
+
+        .reschedule-options label {
+            font-weight: 600;
+        }
+
+        .reschedule-options input {
+            width: auto;
+            display: inline-block;
+            margin-top: 10px;
+        }

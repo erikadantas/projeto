@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de Consultas e Exames</title>
+    <link rel="stylesheet" href="agendamento.css">
+    <script src="agendamento.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="logo.jpeg" alt="Logo da Clínica">
+    </header>
+
+    <div class="form-container">
+        <h2>Preencha os Dados</h2>
+        <form id="agendamentoForm">
+            <label for="tipo">Escolha o tipo de agendamento:</label>
+            <select id="tipo" name="tipo" required>
+                <option value="">Selecione...</option>
+                <option value="consulta">Consulta</option>
+                <option value="exame">Exame</option>
+            </select>
+            <div class="specialties">
+                <label for="especialidade">Selecione a Especialidade:</label>
+                <select id="especialidade" name="especialidade">
+                    <option value="">Selecione...</option>
+                    <option value="cardiologia">Cardiologia</option>
+                    <option value="ortopedia">Ortopedia</option>
+                    <option value="pediatria">Pediatria</option>
+                    <option value="dermatologia">Dermatologia</option>
+                </select>
+            </div>
+            <div class="procedures">
+                <label for="procedimento">Selecione o Procedimento:</label>
+                <select id="procedimento" name="procedimento">
+                    <option value="">Selecione...</option>
+                    <option value="exame_de_sangue">Exame de Sangue</option>
+                    <option value="raio_x">Raio X</option>
+                    <option value="ultrassom">Ultrassom</option>
+                    <option value="ecg">ECG</option>
+                </select>
+            </div>
+            <label for="data">Escolha a Data:</label>
+            <select id="data" name="data" required>
+                <option value="">Selecione a Data</option>
+            </select>
+
+            <label for="hora">Escolha o Horário:</label>
+            <select id="hora" name="hora" required>
+                <option value="">Selecione a Hora</option>
+            </select>
+            <div class="login-container">
+                <h3>Login ou Cadastro</h3>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+
+                <button type="button" onclick="login()">Login</button>
+                <p>Não tem cadastro? <span class="switch-link" onclick="showSignup()">Crie sua conta</span></p>
+            </div>
+
+            <div id="signup" style="display:none;">
+                <h3>Criar Conta</h3>
+                <label for="novo_email">E-mail:</label>
+                <input type="email" id="novo_email" name="novo_email" placeholder="Digite seu e-mail" required>
+
+                <label for="nova_senha">Senha:</label>
+                <input type="password" id="nova_senha" name="nova_senha" placeholder="Crie sua senha" required>
+
+                <button type="button" onclick="signup()">Cadastrar</button>
+                <p>Já tem cadastro? <span class="switch-link" onclick="showLogin()">Faça login</span></p>
+            </div>
+
+            <button type="submit">Agendar</button>
+
+            <p class="error" id="errorMsg"></p>
+            <p class="success" id="successMsg"></p>
+        </form>
+    </div>
+</body>
+</html>

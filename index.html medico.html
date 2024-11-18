@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Disponibilidade do Médico</title>
+    <link rel="stylesheet" href="medico.css">
+    <script src="medico.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.jpeg" alt="Logo da Compilar">
+        </div>
+    </header>
+    <div class="container">
+        <h1>Cadastro de Disponibilidade do Médico</h1>
+        <form id="availability-form">
+            <div class="form-group">
+                <label for="day">Dia da Semana</label>
+                <select id="day" required>
+                    <option value="">Selecione o dia</option>
+                    <option value="Segunda-feira">Segunda-feira</option>
+                    <option value="Terça-feira">Terça-feira</option>
+                    <option value="Quarta-feira">Quarta-feira</option>
+                    <option value="Quinta-feira">Quinta-feira</option>
+                    <option value="Sexta-feira">Sexta-feira</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="start-time">Hora de Início</label>
+                <input type="time" id="start-time" required>
+            </div>
+
+            <div class="form-group">
+                <label for="end-time">Hora de Fim</label>
+                <input type="time" id="end-time" required>
+            </div>
+
+            <div class="form-group">
+                <button type="button" id="add-time-slot">Adicionar mais horários</button>
+            </div>
+        </form>
+        <div class="availability-list" id="availability-list">
+            <h2>Horários Cadastrados</h2>
+            <ul id="times-list">
+            </ul>
+        </div>
+
+        <div class="form-group">
+            <button type="button" id="save-availability">Cadastrar Disponibilidade</button>
+        </div>
+        <div class="file-upload">
+            <h3>Resultado dos Exames</h3>
+
+            <label for="patient-select">Escolha o Paciente:</label>
+            <select id="patient-select" required>
+                <option value="">Selecione o paciente</option>
+                <option value="1">ID: 1 - João Silva - 2024-11-13</option>
+                <option value="2">ID: 2 - Maria Souza - 2024-11-12</option>
+            </select>
+
+            <div class="form-group">
+                <label for="observations">Observações:</label>
+                <textarea id="observations" rows="4" placeholder="Digite suas observações"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="exame-file">Enviar Arquivo de Exame (Imagem/PDF):</label>
+                <input type="file" id="exame-file" accept=".png,.jpg,.jpeg,.pdf" required>
+            </div>
+
+            <div class="form-group">
+                <button type="button" id="send-exam">Enviar Resultado do Exame</button>
+            </div>
+            <div class="sent-exams">
+                <h3>Resultados de Exames Enviados:</h3>
+                <table id="sent-exams-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nome</th>
+                            <th>Data</th>
+                            <th>Observações</th>
+                            <th>Arquivo Enviado</th>
+                            <th>Ação</th>
+                        </tr>
+                    </thead>
+                    <tbody id="sent-exams-list">
+                    
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Compilar | Todos os direitos reservados.</p>
+        <p><a href="#">Política de Privacidade</a></p>
+    </footer>
+</body>
+</html>

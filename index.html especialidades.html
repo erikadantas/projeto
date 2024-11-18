@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Especialidades</title>
+    <link rel="stylesheet" href="especialidades.css">
+    <script src="agendamento.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.jpeg" alt="Logo da Compilar">
+        </div>
+        <nav>
+            <a href="index.html pagina inicial.html">Início</a>
+            <a href="index.html fale conosco.html">Contato</a>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Especialidades</h1>
+        <div class="specialties">
+            <div class="specialty-box" onclick="toggleDoctors('cardiologia')">
+                <h3>Cardiologia</h3>
+                <span class="arrow" id="arrow-cardiologia">↓</span>
+                <div class="doctor-list" id="cardiologia">
+                    <ul>
+                        <li>Dr. João Silva - CRM 12345</li>
+                        <li>Dr. Ana Souza - CRM 67890</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="specialty-box" onclick="toggleDoctors('neurologia')">
+                <h3>Neurologia</h3>
+                <span class="arrow" id="arrow-neurologia">↓</span>
+                <div class="doctor-list" id="neurologia">
+                    <ul>
+                        <li>Dr. Pedro Lima - CRM 23456</li>
+                        <li>Dr. Carolina Ferreira - CRM 98765</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="specialty-box" onclick="toggleDoctors('ortopedia')">
+                <h3>Ortopedia</h3>
+                <span class="arrow" id="arrow-ortopedia">↓</span>
+                <div class="doctor-list" id="ortopedia">
+                    <ul>
+                        <li>Dr. Marcos Oliveira - CRM 34567</li>
+                        <li>Dr. Beatriz Silva - CRM 87654</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="specialty-box" onclick="toggleDoctors('dermatologia')">
+                <h3>Dermatologia</h3>
+                <span class="arrow" id="arrow-dermatologia">↓</span>
+                <div class="doctor-list" id="dermatologia">
+                    <ul>
+                        <li>Dr. Eduardo Santos - CRM 45678</li>
+                        <li>Dr. Raquel Pereira - CRM 76543</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="specialty-box" onclick="toggleDoctors('pediatria')">
+                <h3>Pediatria</h3>
+                <span class="arrow" id="arrow-pediatria">↓</span>
+                <div class="doctor-list" id="pediatria">
+                    <ul>
+                        <li>Dr. Lúcio Martins - CRM 12300</li>
+                        <li>Dr. Julia Oliveira - CRM 56789</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="specialty-box" onclick="toggleDoctors('ginecologia')">
+                <h3>Ginecologia</h3>
+                <span class="arrow" id="arrow-ginecologia">↓</span>
+                <div class="doctor-list" id="ginecologia">
+                    <ul>
+                        <li>Dr. Marisa Costa - CRM 65432</li>
+                        <li>Dr. Fernanda Pereira - CRM 12367</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="specialty-box" onclick="toggleDoctors('oftalmologia')">
+                <h3>Oftalmologia</h3>
+                <span class="arrow" id="arrow-oftalmologia">↓</span>
+                <div class="doctor-list" id="oftalmologia">
+                    <ul>
+                        <li>Dr. Ricardo Barbosa - CRM 32144</li>
+                        <li>Dr. Clara Oliveira - CRM 98754</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="specialty-box" onclick="toggleDoctors('endocrinologia')">
+                <h3>Endocrinologia</h3>
+                <span class="arrow" id="arrow-endocrinologia">↓</span>
+                <div class="doctor-list" id="endocrinologia">
+                    <ul>
+                        <li>Dr. Carlos Silva - CRM 11223</li>
+                        <li>Dr. Tereza Costa - CRM 44321</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="specialty-box" onclick="toggleDoctors('psiquiatria')">
+                <h3>Psiquiatria</h3>
+                <span class="arrow" id="arrow-psiquiatria">↓</span>
+                <div class="doctor-list" id="psiquiatria">
+                    <ul>
+                        <li>Dr. Vanessa Lima - CRM 55678</li>
+                        <li>Dr. Felipe Martins - CRM 88977</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Compilar | Todos os direitos reservados.</p>
+        <p><a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a></p>
+    </footer>
+</body>
+</html>
